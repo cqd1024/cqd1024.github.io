@@ -129,38 +129,7 @@
   
 
 
-<section class="comment">
-<div id="disqus_thread"></div>
-</section>
-<script>
-  <!-- detect whether Disuqs can load -->
-  var xhr = new XMLHttpRequest();
-  xhr.open('GET', '//disqus.com/next/config.json?' + new Date().getTime(), true);
-  xhr.timeout = 3000; 
 
-  xhr.onload = function() { 
-
-
-var disqus_config = function () {
-this.page.url = "https://cqd1024.github.io/post/woaini3/";
-this.page.identifier = "https://cqd1024.github.io/post/woaini3/";
-};
-(function() { 
-var d = document, s = d.createElement('script');
-
-s.src = '//dong.disqus.com/embed.js';
-
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-}
-  xhr.ontimeout = function() {
-  <!-- cannot load Disqus, skip it. -->
-  return;
-}
-xhr.send(null);
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 
 
  
